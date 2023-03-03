@@ -1,0 +1,298 @@
+@use "components";
+
+@mixin sec-display {
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+    padding: 3rem;
+}
+
+html {
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: solid 1px #ddd;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    img {
+        max-width: 3rem;
+    }
+    
+    h1 {
+        color: components.$color-main;
+        font-family: 'Tilt Warp', cursive;
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 1rem;
+
+        &:hover {
+            color: white;
+            text-shadow: 1px  0px 0px components.$color-main,
+               0px  1px 0px components.$color-main,
+              -1px  0px 0px components.$color-main,
+               0px -1px 0px components.$color-main;
+               cursor: pointer;
+        }
+    }
+}
+
+.sec-home {
+    @include sec-display();
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    .home-cta {
+        flex: 1;
+
+        .cta-text {
+            color: components.$color-main;
+        }
+
+        .home-title {
+            font-family: 'Tilt Warp', cursive;
+        }
+
+        .home-description {
+            b {
+                color: components.$color-main;
+                font-family: 'Tilt Warp', cursive;
+            }
+        }
+        .lead-magnet {
+            .input-text {
+            max-width: 400px;
+        }
+        }
+        
+    }
+    
+
+    .home-img img {
+        height: 30rem;
+    }
+}
+
+.sec-features {
+    @include sec-display();
+    display: flex;
+    flex-direction: column;
+
+    .intro {
+        text-align: center;
+
+        h3 {
+            color: components.$color-main;
+            font-family: 'Tilt Warp', cursive;
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        b {
+            color: components.$color-main;
+            font-family: 'Tilt Warp', cursive;
+        }
+    }
+
+    .features {
+        padding: 2rem 0;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+
+        .text {
+            max-width: 80%;
+            flex: 1;
+            .feature {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                text-align: start;
+                .feature-icon {
+                    display: flex;
+                    position: relative;
+                }
+                .feature-description {
+                    margin-left: 1rem;
+                    margin-top: 0.2rem;
+                    max-width: 20rem;
+                    .feature-title {
+                        display: flex;
+                        position: relative;
+                        font-size: 1rem;
+                        font-family: 'Tilt Warp', cursive;
+                        text-align: left;
+                    }
+
+                    .feature-text {
+                        font-size: 0.8rem;
+                        width: 100%; 
+                    }
+                }
+            }
+        }
+
+        .img {
+            display: block;
+            align-items: center;
+            img {
+                max-width: 30rem;
+            }
+        }
+    }
+}
+
+.sec-benefits {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding: 4rem;
+
+    .intro {
+        text-align: center;
+
+        h3 {
+            color: components.$color-main;
+            font-family: 'Tilt Warp', cursive;
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        b {
+            color: components.$color-main;
+            font-family: 'Tilt Warp', cursive;
+        }
+    }
+    
+}
+
+.sec-kpis {
+    width: 100%;
+    background-color: components.$color-main;
+    color: white;
+    padding: 4rem;
+    .kpi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .number {
+            font-family: 'Tilt Warp', cursive;
+            font-size: 3.5rem;
+        }
+
+        .desc {
+            font-size: 1rem;
+        }
+    }
+}
+
+.sec-onboarding {
+    width: 100%;
+    padding: 4rem;
+
+    .intro {
+        text-align: center;
+
+        h3 {
+            color: components.$color-main;
+            font-family: 'Tilt Warp', cursive;
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+
+        b {
+            color: components.$color-main;
+            font-family: 'Tilt Warp', cursive;
+        }
+    }
+
+    .steps {
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .step-separator {
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
+    }
+
+    .icon-desc {
+        .title {
+        color: white;
+            text-shadow: 1px  0px 0px components.$color-main,
+               0px  1px 0px components.$color-main,
+              -1px  0px 0px components.$color-main,
+               0px -1px 0px components.$color-main;
+        }
+    }
+
+    
+}
+
+.sec-footer-cta {
+    background-color: #faecec;
+    padding: 5rem 5rem;
+    background-image: url(pastel-transparent-rainbow-queen-bitch-clip-art-3.png);
+    background-size: 36rem;
+    background-repeat: no-repeat;
+    background-position: 100%;
+
+    .footer-cta {
+        width: 50%;
+        
+
+        .cta-title {
+        font-family: 'Tilt Warp', cursive;
+        font-size: 2rem;
+        color: components.$color-main;
+    }
+
+    .cta-description {
+        font-size: 1.2rem;
+    }
+    }
+
+    
+
+}
+
+@media (max-width: 768px) {
+    .sec-footer-cta {
+        background-image: none;
+
+        .footer-cta {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+}

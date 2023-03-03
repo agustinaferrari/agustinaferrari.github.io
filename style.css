@@ -1,0 +1,364 @@
+.btn-main, .btn-main-s {
+  background-color: #e5989b;
+  color: white;
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  border: solid 1px #e5989b;
+  border: solid 1px #e5989b;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: white;
+  color: #e5989b;
+  border: solid 1px #e5989b;
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.1rem;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.25rem 1.5rem;
+  border-radius: 0.25rem;
+  border: solid 1px #e5989b;
+  color: black;
+  background-color: transparent;
+  border: solid 1px transparent;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  color: #444;
+  border: solid 1px #e5989b;
+}
+.btn-sec-s {
+  font-size: 0.75rem;
+  padding: 0.1rem;
+}
+
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  list-style: none;
+  display: inline;
+  font-size: 0.85rem;
+  padding-right: 2rem;
+}
+.main-menu li a {
+  color: black;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feature .icon {
+  color: #e5989b;
+  font-size: 8rem;
+}
+.feature .description .title {
+  font-size: 2rem;
+  text-align: center;
+}
+.feature .description .text {
+  color: #666;
+  font-weight: 600;
+  text-align: center;
+}
+.feature .cta {
+  color: #e5989b;
+  font-weight: 600;
+}
+
+.icon-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon-desc .icon {
+  color: #e5989b;
+  font-size: 6rem;
+  padding: 0;
+  text-align: center;
+}
+.icon-desc .title {
+  margin-top: 0rem;
+  font-size: 1.5rem;
+  font-family: "Tilt Warp", cursive;
+  color: #e5989b;
+  font-weight: 600;
+  text-align: center;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+}
+.benefit .icon {
+  color: #e5989b;
+  font-size: 4.5rem;
+  text-align: center;
+}
+.benefit .description .title {
+  font-size: 2rem;
+  color: #e5989b;
+  font-family: "Tilt Warp", cursive;
+  text-align: center;
+}
+.benefit .description .text {
+  color: #666;
+  font-weight: 600;
+  text-align: center;
+}
+.benefit .cta {
+  color: #e5989b;
+  font-weight: 600;
+}
+
+html {
+  min-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  border-bottom: solid 1px #ddd;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+}
+.logo img {
+  max-width: 3rem;
+}
+.logo h1 {
+  color: #e5989b;
+  font-family: "Tilt Warp", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-left: 1rem;
+}
+.logo h1:hover {
+  color: white;
+  text-shadow: 1px 0px 0px #e5989b, 0px 1px 0px #e5989b, -1px 0px 0px #e5989b, 0px -1px 0px #e5989b;
+  cursor: pointer;
+}
+
+.sec-home {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.sec-home .home-cta {
+  flex: 1;
+}
+.sec-home .home-cta .cta-text {
+  color: #e5989b;
+}
+.sec-home .home-cta .home-title {
+  font-family: "Tilt Warp", cursive;
+}
+.sec-home .home-cta .home-description b {
+  color: #e5989b;
+  font-family: "Tilt Warp", cursive;
+}
+.sec-home .home-cta .lead-magnet .input-text {
+  max-width: 400px;
+}
+.sec-home .home-img img {
+  height: 35rem;
+}
+
+.sec-features {
+  width: 100%;
+  max-width: 992px;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.sec-features .intro {
+  text-align: center;
+}
+.sec-features .intro h3 {
+  color: #e5989b;
+  font-family: "Tilt Warp", cursive;
+  font-size: 1.6rem;
+}
+.sec-features .intro p {
+  font-size: 0.8rem;
+}
+.sec-features .intro b {
+  color: #e5989b;
+  font-family: "Tilt Warp", cursive;
+}
+.sec-features .features {
+  padding: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.sec-features .features .text {
+  max-width: 80%;
+  flex: 1;
+}
+.sec-features .features .text .feature {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  text-align: start;
+}
+.sec-features .features .text .feature .feature-icon {
+  display: flex;
+  position: relative;
+}
+.sec-features .features .text .feature .feature-description {
+  margin-left: 1rem;
+  margin-top: 0.2rem;
+  max-width: 20rem;
+}
+.sec-features .features .text .feature .feature-description .feature-title {
+  display: flex;
+  position: relative;
+  font-size: 1rem;
+  font-family: "Tilt Warp", cursive;
+  text-align: left;
+}
+.sec-features .features .text .feature .feature-description .feature-text {
+  font-size: 0.8rem;
+  width: 100%;
+}
+.sec-features .features .img {
+  display: block;
+  align-items: center;
+}
+.sec-features .features .img img {
+  max-width: 30rem;
+}
+
+.sec-benefits {
+  width: 100%;
+  border-top: 1px solid #ddd;
+  padding: 4rem;
+}
+.sec-benefits .intro {
+  text-align: center;
+}
+.sec-benefits .intro h3 {
+  color: #e5989b;
+  font-family: "Tilt Warp", cursive;
+  font-size: 1.6rem;
+}
+.sec-benefits .intro p {
+  font-size: 0.8rem;
+}
+.sec-benefits .intro b {
+  color: #e5989b;
+  font-family: "Tilt Warp", cursive;
+}
+
+.sec-kpis {
+  width: 100%;
+  background-color: #e5989b;
+  color: white;
+  padding: 4rem;
+}
+.sec-kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-kpis .kpi .number {
+  font-family: "Tilt Warp", cursive;
+  font-size: 3.5rem;
+}
+.sec-kpis .kpi .desc {
+  font-size: 1rem;
+}
+
+.sec-onboarding {
+  width: 100%;
+  padding: 4rem;
+}
+.sec-onboarding .intro {
+  text-align: center;
+}
+.sec-onboarding .intro h3 {
+  color: #e5989b;
+  font-family: "Tilt Warp", cursive;
+  font-size: 1.6rem;
+}
+.sec-onboarding .intro p {
+  font-size: 0.8rem;
+}
+.sec-onboarding .intro b {
+  color: #e5989b;
+  font-family: "Tilt Warp", cursive;
+}
+.sec-onboarding .steps {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-onboarding .steps .step-separator {
+  flex: 1;
+  border-top: 2px solid #ddd;
+  margin: 0 1rem;
+}
+.sec-onboarding .icon-desc .title {
+  color: white;
+  text-shadow: 1px 0px 0px #e5989b, 0px 1px 0px #e5989b, -1px 0px 0px #e5989b, 0px -1px 0px #e5989b;
+}
+
+.sec-footer-cta {
+  background-color: #faecec;
+  padding: 5rem 5rem;
+  background-image: url(/Ejercicios/img/pastel-transparent-rainbow-queen-bitch-clip-art-3.png);
+  background-size: 36rem;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.sec-footer-cta .footer-cta {
+  width: 50%;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-family: "Tilt Warp", cursive;
+  font-size: 2rem;
+  color: #e5989b;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .sec-footer-cta {
+    background-image: none;
+  }
+  .sec-footer-cta .footer-cta {
+    width: 100%;
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */
